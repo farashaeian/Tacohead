@@ -10,8 +10,20 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        primary: {
+          100: 'rgba(255, 200, 87, 0.3)',
+          200: 'rgba(255, 200, 87, 1)',
+        },
+        secondary: {
+          100: 'rgba(50, 48, 49, 0.2)',
+          200: '#rgba(50, 48, 49, 1)'
+        },
+        red: '#DB3A34',
+        'white-state': {
+          100: 'rgba(255, 255, 255, 0.7)',
+        }
       },
     },
   },
