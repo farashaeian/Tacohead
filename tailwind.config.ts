@@ -18,7 +18,7 @@ const config: Config = {
         },
         secondary: {
           100: 'rgba(50, 48, 49, 0.2)',
-          200: '#rgba(50, 48, 49, 1)'
+          200: 'rgba(50, 48, 49, 1)'
         },
         red: '#DB3A34',
         'white-state': {
