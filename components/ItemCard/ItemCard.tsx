@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { thousandText, tumanText } from "../locales"
+import { thousandText, tumanText } from "../../locales"
 import { PizzaImage, PizzaMobileImage } from "@/public/images"
 
 interface Props {
