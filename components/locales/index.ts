@@ -1,2 +1,2 @@
 export const tumanText = 'تومان'
-export const thousandText = 'هزار'
+export const thousandText = 'هـــزار'

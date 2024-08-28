@@ -2,36 +2,129 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+
+/* @layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+@font-face {
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 100;
+  /* Thin */
+  font-display: swap;
+  src:
+    url('../public/fonts/Vazirmatn-Thin.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 200;
+  /* ExtraLight */
+  font-display: swap;
+  src:
+    url('../public/fonts/Vazirmatn-ExtraLight.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 300;
+  /* Light */
+  font-display: swap;
+  src:
+    url('../public/fonts/Vazirmatn-Light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 400;
+  /* Regular */
+  font-display: swap;
+  src:
+    url('../public/fonts/Vazirmatn-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 500;
+  /* Medium */
+  font-display: swap;
+  src:
+    url('../public/fonts/Vazirmatn-Medium.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 600;
+  /* SemiBold */
+  font-display: swap;
+  src:
+    url('../public/fonts/Vazirmatn-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 700;
+  /* Bold */
+  font-display: swap;
+  src:
+    url('../public/fonts/Vazirmatn-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 800;
+  /* ExtraBold */
+  font-display: swap;
+  src:
+    url('../public/fonts/Vazirmatn-ExtraBold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 900;
+  /* Black */
+  font-display: swap;
+  src:
+    url('../public/fonts/Vazirmatn-Black.ttf') format('ttf');
 }
 
 body {
   direction: rtl;
   color: rgb(var(--foreground-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  font-family: 'Vazirmatn';
 }
 
 @layer base {
   h1 {
-    @apply text-base md:text-[2rem] md:font-black	;
+    @apply text-base md:text-[2rem] md:font-black;
   }
+
   h6 {
-    @apply  text-[14px] md:text-base
+    @apply text-[14px] md:text-base
   }
 }
