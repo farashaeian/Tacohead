@@ -1,5 +1,6 @@
 interface Props {
-    icon: React.ElementType
+    // icon: React.ElementType
+    icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
     title: string
 }
 const MenuItem = ({
