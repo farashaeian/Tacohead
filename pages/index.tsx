@@ -22,8 +22,6 @@ export default function Home() {
       icon={BuritoIcon}
       title="بوریتو"
       />
-      <div className="w-full h-6 bg-orange-600"></div>
-      <PizzaImage className='bg-yellow-400'/>
     </main>
   );
 }
