@@ -2,7 +2,8 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import ItemCard from "@/components/ItemCard";
 import MenuItem from "@/components/MenuItem";
-import { BuritoIcon } from "@/public/icons";
+import { BuritoIcon, PizzaIcon } from "@/public/icons";
+import { PizzaImage } from "@/public/images";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,8 @@ export default function Home() {
       icon={BuritoIcon}
       title="بوریتو"
       />
+      <div className="w-full h-6 bg-orange-600"></div>
+      <PizzaImage className='bg-yellow-400'/>
     </main>
   );
 }

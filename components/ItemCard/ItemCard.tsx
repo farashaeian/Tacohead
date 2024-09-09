@@ -13,7 +13,8 @@ const ItemCard = ({ title, caption, price, imageUrl }: Props) => {
     return (
         <div className="text-white p-1.5 md:p-3 flex flex-row items-center justify-start md:flex-col md:justify-center md:items-center gap-2.5 md:gap-3 bg-secondary-200 max-w-[394px] rounded-xl">
             <div className="rounded-lg w-[84px] h-[84px] md:w-full md:h-[200px]">
-                <Image src={imageUrl ?? PizzaMobileImage} alt={title} className="w-full h-full object-cover rounded-lg" />
+                {imageUrl ? <Image src={imageUrl} alt={title} className="w-full h-full object-cover rounded-lg" />
+                    : <PizzaMobileImage className="w-full h-full object-cover rounded-lg"/>}
             </div>
             <div className="flex-1">
                 <h6 className="mb-1">{title}</h6>
